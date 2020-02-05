@@ -22,11 +22,11 @@
                     </a>
                 </div>
                 <div class="menu col-12 col-md-9">
-                    <a href="#">Cartelera</a>
+                    <a href="cartelera.html">Cartelera</a>
                     <a href="proximos.html">Proximos estrenos</a>
-                    <a href="#">Contactenos</a>
-                    <a href="#">Inicia sesión</a>
-                    <a href="#">Sobre nosotros</a>
+                    <a href="contactenos.html">Contactenos</a>
+                    <a id="login" data-toggle="modal" data-target="#myModal">Inicia sesión</a>
+                    <a href="about.html">Sobre nosotros</a>
                 </div>
             </div>
         </div>
@@ -68,6 +68,41 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+  
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Ingresa usuario y contraseña</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="form-group">
+              <label for="username">usuario</label>
+              <input class="form-control" type="text" name="username" id="username" placeholder="ejemplo@usuario.com">
+          </div>
+          <div class="form-group">
+            <label for="password">contraseña</label>
+            <input class="form-control" type="password" name="password" id="password">
+        </div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal" id="boton-ingresar">Ingresar</button>
+        </div>
+
+  
+      </div>
+    </div>
+  </div>
+
 
 
 
